@@ -1,0 +1,38 @@
+{
+  "name": "react-codemod",
+  "version": "1.0.0",
+  "description": "Codemod scripts to transform React createClass to JS 2015 Class syntax",
+  "main": "react-createClass-to-js-2015-class.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/torifat/react-codemod"
+  },
+  "keywords": [
+    "codemod"
+  ],
+  "author": "Rifat Nabi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/torifat/react-codemod/issues"
+  },
+  "homepage": "https://github.com/torifat/react-codemod#readme",
+  "dependencies": {
+    "jscodeshift": "^0.3.7"
+  },
+  "devDependencies": {
+    "babel-jest": "^5.3.0",
+    "jest-cli": "^0.5.10"
+  },
+  "jest": {
+    "scriptPreprocessor": "./node_modules/babel-jest",
+    "testPathDirs": [
+      "test"
+    ]
+  }
+}
